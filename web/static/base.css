@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+    font-family: 'Ubuntu', monospace;
+    margin: 2%;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -8,15 +16,18 @@ th {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .timedef {
-    text-align: right;
+    text-align: center;
+/*     padding-right: 0.4em; */
 }
 
 .timeval {
     text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: larger;
 }
 
 #fuzzball {

@@ -10,7 +10,7 @@
 	<body>
 		<img id="fuzzball" src="{{ fuzzball_image }}">
 		<p id="status">
-			The SIPB Office is {{ door_status }} since {{ last_change }}
+			The SIPB Office is <b>{{ door_status }}</b> since {{ last_change }}.
 		</p>
 
 		<div id="doortable">
@@ -33,7 +33,7 @@
 						<td class="timedef">{{ hour }}:00</td>
 						{% for day in range(7) -%}
 						{% set idx = day * 24 + hour -%}
-						<td class="timeval" style="background-color: hsl(0, 100%, {{ prob_color[idx][1] }}%)">{{ prob_color[idx][0] }}</td>
+						<td class="timeval" style="background-color: hsl(200, 100%, {{ prob_color[idx][1] }}%)">{{ prob_color[idx][0] }}</td>
 						{% endfor %}
 					</tr>
 					{% endfor %}
